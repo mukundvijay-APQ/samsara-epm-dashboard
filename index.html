@@ -76,347 +76,7 @@
       },
       {
         id: "VG56", name: "VG56 Vehicle Gateway", phase: "EVT", status: "At Risk", owner: "James Park",
-        mp: "2026-11-30", desc: "Next-gen vehicle IoT gateway wih WiFi 6E, 5G, edge compute", prog: 32,
-        sched: [
-          { p: "Concept", s: 0, d: 10, st: "Complete" }, { p: "EVT", s: 10, d: 14, st: "In Progress" },
-          { p: "DVT", s: 24, d: 12, st: "Not Started" }, { p: "PVT", s: 36, d: 10, st: "Not Started" },
-          { p: "MP Ramp", s: 46, d: 8, st: "Not Started" },
-        ],
-        comps: [
-          { n: "Main PCBA", sub: "Electronics", sup: "Pegatron", st: "EVT", risk: "Medium", wk: 16 },
-          { n: "5G Modem (Qualcomm X65)", sub: "Connectivity", sup: "Qualcomm", st: "EVT", risk: "High", wk: 20 },
-          { n: "App Processor (NXP i.MX8)", sub: "Electronics", sup: "NXP", st: "EVT", risk: "Medium", wk: 14 },
-          { n: "WiFi 6E / BT 5.3 Module", sub: "Connectivity", sup: "Murata", st: "EVT", risk: "Low", wk: 10 },
-          { n: "Multi-Band GNSS Module", sub: "Connectivity", sup: "u-blox", st: "EVT", risk: "Low", wk: 10 },
-          { n: "OBD-II Interface IC", sub: "Electronics", sup: "STMicro", st: "EVT", risk: "Low", wk: 8 },
-          { n: "6-Axis IMU (Accel/Gyro)", sub: "Sensors", sup: "Bosch", st: "EVT", risk: "Low", wk: 8 },
-          { n: "Enclosure (IP67 Rated)", sub: "Mechanical", sup: "Jabil", st: "Prototype", risk: "Medium", wk: 14 },
-          { n: "Thermal Management Assembly", sub: "Mechanical", sup: "Aavid", st: "Prototype", risk: "High", wk: 12 },
-          { n: "Multi-band Antenna Array", sub: "Connectivity", sup: "Taoglas", st: "EVT", risk: "Medium", wk: 12 },
-          { n: "Power Supply + Voltage Reg.", sub: "Electronics", sup: "TI", st: "EVT", risk: "Low", wk: 8 },
-          { n: "Vehicle Harness + OBD Conn.", sub: "Interconnect", sup: "TE Connectivity", st: "EVT", risk: "Low", wk: 8 },
-          { n: "Retail Box + Install Guide", sub: "Packaging", sup: "WestRock", st: "Not Started", risk: "Low", wk: 6 },
-          { n: "FCC/UPC/SKU Labels", sub: "Labels", sup: "Avery Dennison", st: "Not Started", risk: "Low", wk: 3 },
-          { n: "FW: 5G Stack + OTA Update", sub: "Firmware", sup: "Internal", st: "EVT", risk: "High", wk: 22 },
-          { n: "FW: Vehicle Diagnostics", sub: "Firmware", sup: "Internal", st: "EVT", risk: "Medium", wk: 16 },
-        ],
-        bom: [
-          { c: "Main PCBA (assembled)", q: 1, u: 38.00 }, { c: "5G Modem (Qualcomm X65)", q: 1, u: 32.00 },
-          { c: "App Processor (NXP i.MX8)", q: 1, u: 14.50 }, { c: "WiFi 6E / BT Module", q: 1, u: 4.20 },
-          { c: "GNSS Module (u-blox)", q: 1, u: 6.80 }, { c: "OBD-II Interface IC", q: 1, u: 2.40 },
-          { c: "6-Axis IMU (Bosch)", q: 1, u: 3.50 }, { c: "Enclosure (IP67)", q: 1, u: 5.60 },
-          { c: "Thermal Assembly", q: 1, u: 3.20 }, { c: "Antenna Array", q: 1, u: 4.80 },
-          { c: "Power + Voltage Reg.", q: 1, u: 2.90 }, { c: "Harness + OBD", q: 1, u: 4.50 },
-          { c: "Packaging + Labels", q: 1, u: 2.80 },
-        ],
-        tgt: 115, cur: 126.55, vol: 350000,
-      },
-      {
-        id: "AT12", name: "AT12 Asset Tag", phase: "PVT", status: "On Track", owner: "Maria Lopez",
-        mp: "2026-05-30", desc: "Ultra-low-power BLE/LTE-M asset tag, 5-year battery life", prog: 82,
-        sched: [
-          { p: "Concept", s: 0, d: 6, st: "Complete" }, { p: "EVT", s: 6, d: 10, st: "Complete" },
-          { p: "DVT", s: 16, d: 10, st: "Complete" }, { p: "PVT", s: 26, d: 8, st: "In Progress" },
-          { p: "MP Ramp", s: 34, d: 6, st: "Not Started" },
-        ],
-        comps: [
-          { n: "Main PCBA", sub: "Electronics", sup: "Flex", st: "PVT", risk: "Low", wk: 10 },
-          { n: "LTE-M Modem (Nordic nRF9160)", sub: "Connectivity", sup: "Nordic Semi", st: "PVT", risk: "Low", wk: 10 },
-          { n: "GNSS Module (u-blox MAX-M10S)", sub: "Connectivity", sup: "u-blox", st: "PVT", risk: "Low", wk: 8 },
-          { n: "BLE 5.3 SoC", sub: "Connectivity", sup: "Nordic Semi", st: "PVT", risk: "Low", wk: 8 },
-          { n: "3-Axis Accelerometer", sub: "Sensors", sup: "STMicro", st: "Complete", risk: "Low", wk: 6 },
-          { n: "Li-SOCl2 Battery (3.6V 14.5Ah)", sub: "Power", sup: "Tadiran", st: "PVT", risk: "Low", wk: 8 },
-          { n: "Enclosure (IP68, UV-resistant)", sub: "Mechanical", sup: "Jabil", st: "PVT", risk: "Low", wk: 10 },
-          { n: "Flexible PCB Antenna", sub: "Connectivity", sup: "Molex", st: "Complete", risk: "Low", wk: 6 },
-          { n: "Industrial Adhesive Mount", sub: "Mechanical", sup: "3M", st: "PVT", risk: "Low", wk: 4 },
-          { n: "Retail Packaging + QSG", sub: "Packaging", sup: "WestRock", st: "In Progress", risk: "Low", wk: 5 },
-          { n: "Regulatory / Shipping Labels", sub: "Labels", sup: "Avery Dennison", st: "In Progress", risk: "Low", wk: 3 },
-          { n: "FW: Power Mgmt + OTA", sub: "Firmware", sup: "Internal", st: "PVT", risk: "Low", wk: 12 },
-        ],
-        bom: [
-          { c: "Main PCBA", q: 1, u: 12.50 }, { c: "LTE-M Modem", q: 1, u: 7.80 },
-          { c: "GNSS Module", q: 1, u: 4.20 }, { c: "BLE SoC", q: 1, u: 2.80 },
-          { c: "Accelerometer", q: 1, u: 1.20 }, { c: "Battery (Li-SOCl2)", q: 1, u: 8.50 },
-          { c: "Enclosure (IP68)", q: 1, u: 2.40 }, { c: "Flex Antenna", q: 1, u: 1.10 },
-          { c: "Adhesive Mount", q: 1, u: 0.60 }, { c: "Packaging + Labels", q: 1, u: 1.80 },
-        ],
-        tgt: 42, cur: 42.90, vol: 800000,
-      },
-      {
-        id: "EM23", name: "EM23 Environmental Sensor", phase: "EVT", status: "On Track", owner: "David Kim",
-        mp: "2026-10-30", desc: "Next-gen env. monitor: temp, humidity, door, light sensors", prog: 22,
-        sched: [
-          { p: "Concept", s: 0, d: 6, st: "Complete" }, { p: "EVT", s: 6, d: 10, st: "In Progress" },
-          { p: "DVT", s: 16, d: 10, st: "Not Started" }, { p: "PVT", s: 26, d: 8, st: "Not Started" },
-          { p: "MP Ramp", s: 34, d: 4, st: "Not Started" },
-        ],
-        comps: [
-          { n: "Main PCBA", sub: "Electronics", sup: "Flex", st: "EVT", risk: "Low", wk: 10 },
-          { n: "BLE SoC + Temp/Humidity", sub: "Sensors", sup: "Nordic/Sensirion", st: "EVT", risk: "Low", wk: 10 },
-          { n: "Door Contact Reed Switch", sub: "Sensors", sup: "Standex", st: "Complete", risk: "Low", wk: 4 },
-          { n: "Ambient Light Sensor", sub: "Sensors", sup: "AMS-OSRAM", st: "EVT", risk: "Low", wk: 6 },
-          { n: "CR2477 Battery + Holder", sub: "Power", sup: "Panasonic", st: "EVT", risk: "Low", wk: 6 },
-          { n: "Enclosure (IP54)", sub: "Mechanical", sup: "Jabil", st: "Prototype", risk: "Low", wk: 8 },
-          { n: "Packaging + QSG + Labels", sub: "Packaging", sup: "WestRock", st: "Not Started", risk: "Low", wk: 5 },
-          { n: "FW: Sensor Fusion + BLE", sub: "Firmware", sup: "Internal", st: "EVT", risk: "Medium", wk: 12 },
-        ],
-        bom: [
-          { c: "Main PCBA", q: 1, u: 6.50 }, { c: "BLE SoC + Sensors", q: 1, u: 4.80 },
-          { c: "Reed Switch", q: 1, u: 0.30 }, { c: "Light Sensor", q: 1, u: 0.80 },
-          { c: "Battery + Holder", q: 1, u: 1.90 }, { c: "Enclosure (IP54)", q: 1, u: 1.60 },
-          { c: "Packaging + Docs", q: 1, u: 1.40 },
-        ],
-        tgt: 16, cur: 17.30, vol: 600000,
-      },
-    ];
-
-    const risks = [
-      { id: "R-001", pg: "CM35", t: "Edge AI inference latency exceeds 200ms target", sev: "High", lik: "Medium", imp: "Schedule", own: "FW Team", st: "Open", mit: "Optimize model quantization; evaluate CV72 NPU scheduling" },
-      { id: "R-002", pg: "VG56", t: "5G modem thermal throttling under sustained load", sev: "Critical", lik: "High", imp: "Schedule + Cost", own: "EE/Thermal", st: "Open", mit: "Redesign thermal solution; evaluate heat pipe option (+$1.80)" },
-      { id: "R-003", pg: "VG56", t: "Qualcomm X65 supply allocation uncertain Q3 2026", sev: "High", lik: "Medium", imp: "Schedule", own: "Supply Chain", st: "Monitoring", mit: "Second source eval (MediaTek T830); buffer stock negotiation" },
-      { id: "R-004", pg: "CM35", t: "IR module yield at 78% (target: 92%)", sev: "Medium", lik: "High", imp: "Cost", own: "Supplier Qual.", st: "Open", mit: "OmniVision corrective action in progress; SCAR issued" },
-      { id: "R-005", pg: "AT12", t: "PVT battery life test showing 4.6yr vs 5yr target", sev: "Medium", lik: "Medium", imp: "Quality", own: "FW Team", st: "Open", mit: "Optimize wake/sleep cycle; evaluate higher-capacity cell" },
-      { id: "R-006", pg: "CM35", t: "FCC/IC certification timeline may slip 2 weeks", sev: "Low", lik: "Medium", imp: "Schedule", own: "Compliance", st: "Monitoring", mit: "Pre-scan scheduled; backup test lab reserved" },
-      { id: "R-007", pg: "EM23", t: "Sensor accuracy drift at high humidity (>90% RH)", sev: "Medium", lik: "Low", imp: "Quality", own: "EE Team", st: "Open", mit: "Evaluate calibration offset; consider SHT45 upgrade" },
-      { id: "R-008", pg: "VG56", t: "IP67 seal failure in thermal shock test (2/10 units)", sev: "High", lik: "Medium", imp: "Quality + Sched.", own: "ME Team", st: "Open", mit: "Gasket material change to silicone; retool pending" },
-    ];
-
-    const xFunc = [
-      { team: "Electrical Eng.", CM35: "On Track", VG56: "At Risk", AT12: "On Track", EM23: "On Track" },
-      { team: "Mechanical Eng.", CM35: "On Track", VG56: "At Risk", AT12: "On Track", EM23: "On Track" },
-      { team: "Firmware", CM35: "At Risk", VG56: "At Risk", AT12: "On Track", EM23: "On Track" },
-      { team: "Full Stack / Cloud", CM35: "On Track", VG56: "On Track", AT12: "On Track", EM23: "Not Started" },
-      { team: "QA / Test", CM35: "On Track", VG56: "On Track", AT12: "On Track", EM23: "Not Started" },
-      { team: "Product Mgmt.", CM35: "On Track", VG56: "On Track", AT12: "On Track", EM23: "On Track" },
-      { team: "Supply Chain", CM35: "On Track", VG56: "At Risk", AT12: "On Track", EM23: "On Track" },
-      { team: "Operations / NPI", CM35: "On Track", VG56: "Not Started", AT12: "On Track", EM23: "Not Started" },
-      { team: "Compliance", CM35: "At Risk", VG56: "Not Started", AT12: "On Track", EM23: "Not Started" },
-    ];
-
-    const suppliers = [
-      { name: "Foxconn", type: "CM", prods: "CM35", qual: 96, otd: 94, lead: 12, loc: "Shenzhen, CN", risk: "Low" },
-      { name: "Pegatron", type: "ODM", prods: "VG56", qual: 93, otd: 88, lead: 14, loc: "Taipei, TW", risk: "Medium" },
-      { name: "Flex", type: "CM", prods: "AT12, EM23", qual: 97, otd: 96, lead: 10, loc: "Zhuhai, CN", risk: "Low" },
-      { name: "Jabil", type: "CM", prods: "Enclosures", qual: 95, otd: 92, lead: 8, loc: "Penang, MY", risk: "Low" },
-      { name: "Qualcomm", type: "IC", prods: "CM35, VG56", qual: 99, otd: 82, lead: 16, loc: "San Diego, US", risk: "Medium" },
-      { name: "Sony", type: "IC", prods: "CM35", qual: 99, otd: 95, lead: 14, loc: "Kumamoto, JP", risk: "Low" },
-      { name: "Nordic Semi", type: "IC", prods: "AT12, EM23", qual: 98, otd: 93, lead: 12, loc: "Trondheim, NO", risk: "Low" },
-    ];
-
-    const B = ({ children, color = C.a }) => (
-      <span style={{ display: "inline-block", padding: "2px 10px", borderRadius: 12, fontSize: 11, fontWeight: 600, background: color + "14", color, border: `1px solid ${color}30`, whiteSpace: "nowrap" }}>{children}</span>
-    );
-
-    const SD = ({ s }) => (
-      <span style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 12 }}>
-        <span style={{ width: 8, height: 8, borderRadius: 4, background: sC[s] || C.dim }} />{s}
-      </span>
-    );
-
-    const Card = ({ title, children, style, right }) => (
-      <div style={{ background: C.card, borderRadius: 12, border: `1px solid ${C.bdr}`, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", overflow: "hidden", ...style }}>
-        {title && (
-          <div style={{ padding: "14px 20px", borderBottom: `1px solid ${C.bdr}`, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <h3 style={{ margin: 0, fontSize: 14, fontWeight: 600, color: C.txt }}>{title}</h3>
-            {right}
-          </div>
-        )}
-        <div style={{ padding: 20 }}>{children}</div>
-      </div>
-    );
-
-    const PB = ({ val, max = 100, color = C.a, h = 6 }) => (
-      <div style={{ background: C.card2, borderRadius: h / 2, height: h, width: "100%", overflow: "hidden" }}>
-        <div style={{ width: `${Math.min((val / max) * 100, 100)}%`, height: "100%", background: color, borderRadius: h / 2 }} />
-      </div>
-    );
-
-    const MC = ({ label, value, sub, color = C.a }) => (
-      <div style={{ background: C.card, borderRadius: 12, border: `1px solid ${C.bdr}`, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", padding: "16px 20px", flex: 1, minWidth: 150 }}>
-        <div style={{ fontSize: 11, color: C.mut, textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 }}>{label}</div>
-        <div style={{ fontSize: 28, fontWeight: 700, color }}>{value}</div>
-        {sub && <div style={{ fontSize: 11, color: C.dim, marginTop: 2 }}>{sub}</div>}
-      </div>
-    );
-
-    const SB = ({ sev }) => {
-      const m = { Critical: C.err, High: C.org, Medium: C.warn, Low: C.ok };
-      return <B color={m[sev] || C.dim}>{sev}</B>;
-    };
-
-    const subColor = { Firmware: C.pur, Electronics: C.a, Camera: C.info, Connectivity: C.ok, Mechanical: C.warn, Sensors: C.org, Interconnect: C.aL, Packaging: "#6b7280", Labels: "#6b7280", Power: C.err };
-    const stColor = { Complete: C.ok, PVT: C.warn, "PVT Ready": C.warn, DVT: C.a, EVT: "#6c47a0", Prototype: "#6c47a0", "In Progress": C.a, "Not Started": C.dim };
-
-    const Gantt = ({ sched }) => {
-      const mx = Math.max(...sched.map(s => s.s + s.d));
-      const months = Array.from({ length: Math.ceil(mx / 4) + 1 }, (_, i) => `M${i + 1}`);
-      const pCols = { Concept: "#9ca3af", EVT: "#6c47a0", DVT: "#1a56db", PVT: "#c4760b", "MP Ramp": "#0d7a3e" };
-      const op = { Complete: 1, "In Progress": 0.85, "Not Started": 0.35 };
-      return (
-        <div>
-          <div style={{ display: "flex", borderBottom: `1px solid ${C.bdr}`, paddingBottom: 4, marginBottom: 8 }}>
-            <div style={{ width: 90, flexShrink: 0 }} />
-            <div style={{ flex: 1, display: "flex" }}>
-              {months.map((m, i) => <div key={i} style={{ flex: 1, fontSize: 10, color: C.dim, textAlign: "center" }}>{m}</div>)}
-            </div>
-          </div>
-          {sched.map((s, i) => (
-            <div key={i} style={{ display: "flex", alignItems: "center", marginBottom: 6 }}>
-              <div style={{ width: 90, flexShrink: 0, fontSize: 11, color: C.mut, fontWeight: 500 }}>{s.p}</div>
-              <div style={{ flex: 1, position: "relative", height: 22 }}>
-                <div style={{
-                  position: "absolute", left: `${(s.s / mx) * 100}%`, width: `${(s.d / mx) * 100}%`,
-                  height: "100%", borderRadius: 4, background: pCols[s.p] || C.a,
-                  opacity: op[s.st] || 0.5, display: "flex", alignItems: "center", justifyContent: "center",
-                  fontSize: 10, color: "#fff", fontWeight: 500,
-                }}>{s.d}w</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      );
-    };
-
-    const pieColors = ["#1a56db", "#6c47a0", "#0d7a3e", "#c4760b", "#0c7792", "#d46212"];
-
-    function Dashboard() {
-      const [tab, setTab] = useState("overview");
-      const [sel, setSel] = useState("CM35");
-      const [rf, setRf] = useState("All");
-
-      const tabs = [
-        { id: "overview", l: "Program Overview" }, { id: "schedule", l: "Schedule & Components" },
-        { id: "bom", l: "BOM & Cost" }, { id: "risks", l: "Risk Register" },
-        { id: "xfunc", l: "Cross-Functional" }, { id: "suppliers", l: "Supplier Scorecard" },
-      ];
-
-      const pg = programs.find(p => p.id === sel) || programs[0];
-      const fRisks = rf === "All" ? risks : risks.filter(r => r.pg === rf);
-      const totBom = pg.bom.reduce((s, b) => s + b.q * b.u, 0);
-      const gap = pg.cur - pg.tgt;
-
-      const bomCats = (() => {
-        const cats = {};
-        pg.bom.forEach(b => {
-          const t = b.q * b.u;
-          const cat = b.c.includes("PCBA") ? "PCBA" : b.c.includes("Modem") || b.c.includes("SoC") || b.c.includes("Processor") ? "Silicon" : b.c.includes("Sensor") || b.c.includes("Camera") || b.c.includes("Lens") || b.c.includes("Module") || b.c.includes("IMU") || b.c.includes("Switch") || b.c.includes("Antenna") || b.c.includes("Accel") ? "Sensors/Modules" : b.c.includes("Enclosure") || b.c.includes("Thermal") || b.c.includes("Mount") || b.c.includes("Bracket") || b.c.includes("LED") ? "Mechanical" : b.c.includes("Package") || b.c.includes("Doc") || b.c.includes("Label") || b.c.includes("ESD") ? "Packaging" : b.c.includes("Battery") ? "Battery" : "Other";
-          cats[cat] = (cats[cat] || 0) + t;
-        });
-        return Object.entries(cats).map(([name, value]) => ({ name, value: +value.toFixed(2) }));
-      })();
-
-      const costTrend = [
-        { w: "W1", target: pg.tgt, actual: pg.cur + 12 }, { w: "W4", target: pg.tgt, actual: pg.cur + 9 },
-        { w: "W8", target: pg.tgt, actual: pg.cur + 6 }, { w: "W12", target: pg.tgt, actual: pg.cur + 3 },
-        { w: "W16", target: pg.tgt, actual: pg.cur + 1 }, { w: "W20", target: pg.tgt, actual: pg.cur },
-        { w: "W24", target: pg.tgt, actual: pg.tgt + 2 },
-      ];
-
-      return (
-        <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", background: C.bg, color: C.txt, minHeight: "100vh" }}>
-          <div style={{ background: "#ffffff", borderBottom: `1px solid ${C.bdr}`, padding: "20px 24px", boxShadow: "0 1px 3px rgba(0,0,0,0.05)" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
-              <div>
-                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 4 }}>
-                  <span style={{ fontSize: 20, fontWeight: 700, color: "#1a1f36" }}>Samsara</span>
-                  <span style={{ width: 1, height: 20, background: C.bdr, display: "inline-block" }} />
-                  <span style={{ fontSize: 13, color: C.a, fontWeight: 600 }}>Systems EPM Platform</span>
-                </div>
-                <div style={{ fontSize: 12, color: C.mut }}>Hardware Engineering Program Management Dashboard</div>
-              </div>
-              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-                {programs.map(p => (
-                  <button key={p.id} onClick={() => setSel(p.id)} style={{
-                    padding: "6px 14px", borderRadius: 8, border: `1px solid ${sel === p.id ? C.a : C.bdr}`,
-                    background: sel === p.id ? C.a + "12" : "#ffffff", color: sel === p.id ? C.a : C.mut,
-                    cursor: "pointer", fontSize: 12, fontWeight: 500,
-                  }}>{p.id}</button>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div style={{ background: "#ffffff", borderBottom: `1px solid ${C.bdr}`, overflowX: "auto" }}>
-            <div style={{ display: "flex" }}>
-              {tabs.map(t => (
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samsara Systems EPM Platform â Mukund Vijay</title>
-  <meta name="description" content="Hardware Engineering Program Management Dashboard for IoT product portfolios. Concept by Mukund Vijay." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.12.7/Recharts.min.js"></script>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8f9fb; color: #1a1f36; -webkit-font-smoothing: antialiased; }
-    button { font-family: inherit; }
-    #root { min-height: 100vh; }
-  </style>
-</head>
-<body>
-  <div id="root"></div>
-  <script type="text/babel">
-    const { useState } = React;
-    const { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, LineChart, Line, CartesianGrid, Legend } = Recharts;
-
-    const C = {
-      bg: "#f8f9fb", card: "#ffffff", card2: "#f1f3f5", bdr: "#d5dbe3",
-      a: "#1a56db", aL: "#3b71e8", ok: "#0d7a3e", warn: "#c4760b",
-      err: "#c92a2a", info: "#0c7792", pur: "#6c47a0", txt: "#1a1f36",
-      mut: "#5e6687", dim: "#8892a4", org: "#d46212",
-    };
-    const sC = { "On Track": C.ok, "At Risk": C.warn, "Blocked": C.err, Complete: C.a, "Not Started": C.dim };
-    const pC = { EVT: "#6c47a0", DVT: "#1a56db", PVT: "#c4760b", MP: "#0d7a3e" };
-
-    const programs = [
-      {
-        id: "CM35", name: "CM35 AI Multicam", phase: "DVT", status: "On Track", owner: "Sarah Chen",
-        mp: "2026-08-15", desc: "Next-gen 4K AI multicam with edge ML, 3-camera array", prog: 58,
-        sched: [
-          { p: "Concept", s: 0, d: 8, st: "Complete" }, { p: "EVT", s: 8, d: 12, st: "Complete" },
-          { p: "DVT", s: 20, d: 14, st: "In Progress" }, { p: "PVT", s: 34, d: 10, st: "Not Started" },
-          { p: "MP Ramp", s: 44, d: 6, st: "Not Started" },
-        ],
-        comps: [
-          { n: "Main PCBA", sub: "Electronics", sup: "Foxconn", st: "DVT", risk: "Low", wk: 14 },
-          { n: "ISP/AI SoC (Ambarella CV72)", sub: "Electronics", sup: "Ambarella", st: "DVT", risk: "Medium", wk: 16 },
-          { n: "4K CMOS Sensor (Sony IMX678)", sub: "Camera", sup: "Sony", st: "DVT", risk: "Low", wk: 12 },
-          { n: "Wide-Angle Lens Assembly", sub: "Camera", sup: "Sunny Optical", st: "DVT", risk: "Low", wk: 10 },
-          { n: "Driver-Facing IR Camera Module", sub: "Camera", sup: "OmniVision", st: "EVT", risk: "Medium", wk: 14 },
-          { n: "Cellular Modem (Qualcomm SDX62)", sub: "Connectivity", sup: "Qualcomm", st: "DVT", risk: "Low", wk: 12 },
-          { n: "WiFi 6E / BT 5.3 Module", sub: "Connectivity", sup: "Murata", st: "DVT", risk: "Low", wk: 10 },
-          { n: "GPS/GNSS Antenna", sub: "Connectivity", sup: "Taoglas", st: "Complete", risk: "Low", wk: 8 },
-          { n: "Enclosure (PC/ABS Molded)", sub: "Mechanical", sup: "Jabil", st: "DVT", risk: "Low", wk: 12 },
-          { n: "Thermal Solution (Heatsink+Pad)", sub: "Mechanical", sup: "Aavid", st: "DVT", risk: "Medium", wk: 10 },
-          { n: "Mounting Bracket + Adhesive Kit", sub: "Mechanical", sup: "Jabil", st: "PVT Ready", risk: "Low", wk: 8 },
-          { n: "LED Light Pipe / Indicator", sub: "Mechanical", sup: "Bivar", st: "Complete", risk: "Low", wk: 6 },
-          { n: "USB-C Connector + Cable Harness", sub: "Interconnect", sup: "Amphenol", st: "DVT", risk: "Low", wk: 8 },
-          { n: "Retail Box + Insert Tray (FSC)", sub: "Packaging", sup: "WestRock", st: "Not Started", risk: "Low", wk: 6 },
-          { n: "Quick Start Guide + Regulatory", sub: "Packaging", sup: "Cenveo", st: "Not Started", risk: "Low", wk: 4 },
-          { n: "UPC/SKU Labels + Serial Stickers", sub: "Labels", sup: "Avery Dennison", st: "Not Started", risk: "Low", wk: 3 },
-          { n: "FW: Edge AI Inference Engine", sub: "Firmware", sup: "Internal", st: "DVT", risk: "High", wk: 18 },
-          { n: "FW: Camera ISP Pipeline", sub: "Firmware", sup: "Internal", st: "DVT", risk: "Medium", wk: 16 },
-        ],
-        bom: [
-          { c: "Main PCBA (assembled)", q: 1, u: 42.50 }, { c: "AI SoC (Ambarella CV72)", q: 1, u: 28.00 },
-          { c: "4K CMOS Sensor (IMX678)", q: 1, u: 8.50 }, { c: "Wide-Angle Lens Assembly", q: 1, u: 3.20 },
-          { c: "IR Camera Module (Driver)", q: 1, u: 6.80 }, { c: "Cellular Modem (SDX62)", q: 1, u: 18.50 },
-          { c: "WiFi 6E / BT Module", q: 1, u: 4.20 }, { c: "GPS/GNSS Antenna", q: 1, u: 2.10 },
-          { c: "Enclosure (PC/ABS)", q: 1, u: 3.80 }, { c: "Thermal Pad + Heat Sink", q: 1, u: 1.90 },
-          { c: "Mounting Bracket Kit", q: 1, u: 1.40 }, { c: "LED Light Pipe", q: 2, u: 0.15 },
-          { c: "USB-C + Cable Harness", q: 1, u: 2.80 }, { c: "Retail Packaging", q: 1, u: 2.20 },
-          { c: "Docs + Labels", q: 1, u: 0.45 }, { c: "ESD Bag + Desiccant", q: 1, u: 0.35 },
-        ],
-        tgt: 120, cur: 127, vol: 500000,
-      },
-      {
-        id: "VG56", name: "VG56 Vehicle Gateway", phase: "EVT", status: "At Risk", owner: "James Park",
-        mp: "2026-11-30", desc: "Next-gen vehicle IoT gateway wih WiFi 6E, 5G, edge compute", prog: 32,
+        mp: "2026-11-30", desc: "Next-gen vehicle IoT gateway with WiFi 6E, 5G, edge compute", prog: 32,
         sched: [
           { p: "Concept", s: 0, d: 10, st: "Complete" }, { p: "EVT", s: 10, d: 14, st: "In Progress" },
           { p: "DVT", s: 24, d: 12, st: "Not Started" }, { p: "PVT", s: 36, d: 10, st: "Not Started" },
@@ -740,4 +400,267 @@
 
             {tab === "schedule" && (
               <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-     "Ä6&BFFÆS×¶G·ræGÒ(	BG·rææÖWÒ66VGVÆVÒ&vC×³Ä"6öÆ÷#×·5·rç6U×Óç·rç6WÓÂô#çÓà¢ÄvçGB66VC×·rç66VGÒóà¢Âô6&Cà¢Ä6&BFFÆSÒ$6ö×öæVçB'&V¶F÷vâ'7V'77FVÒ#à¢ÆFb7GÆS×·²÷fW&fÆ÷u¢&WFò"×Óà¢ÇF&ÆR7GÆS×·²vGF¢#R"Â&÷&FW$6öÆÆ6S¢&6öÆÆ6R"ÂföçE6¦S¢"×Óà¢ÇFVCà¢ÇG"7GÆS×·²&÷&FW$&÷GFöÓ¢6öÆBG´2æ&G'Ö×Óà¢µ²$6ö×öæVçB"Â%7V'77FVÒ"Â%7WÆW""Â%7FGW2"Â%&6²"Â$ÆVB%ÒæÖÓâ¢ÇF¶W×¶Ò7GÆS×·²FFæs¢#'"ÂFWDÆvã¢&ÆVgB"Â6öÆ÷#¢2æ×WBÂföçEvVvC¢SÂföçE6¦S¢ÂFWEG&ç6f÷&Ó¢'WW&66R"×Óç¶ÓÂ÷Fà¢Ð¢Â÷G#à¢Â÷FVCà¢ÇF&öGà¢·ræ6ö×2æÖ2ÂÓâ¢ÇG"¶W×¶Ò7GÆS×·²&÷&FW$&÷GFöÓ¢6öÆBG´2æ&G'Ó×Óà¢ÇFB7GÆS×·²FFæs¢#'"ÂföçEvVvC¢SÂ6öÆ÷#¢2çGB×Óç¶2æçÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#'"×ÓãÄ"6öÆ÷#×·7V$6öÆ÷%¶2ç7V%ÒÇÂ2æF×Óç¶2ç7V'ÓÂô#ãÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#'"Â6öÆ÷#¢2æ×WB×Óç¶2ç7WÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#'"×ÓãÄ"6öÆ÷#×·7D6öÆ÷%¶2ç7EÒÇÂ2æF×Óç¶2ç7GÓÂô#ãÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#'"×ÓãÅ4"6Wc×¶2ç&6·ÒóãÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#'"Â6öÆ÷#¢2æ×WBÂFWDÆvã¢&6VçFW""×Óç¶2çv·×sÂ÷FCà¢Â÷G#à¢Ð¢Â÷F&öGà¢Â÷F&ÆSà¢ÂöFcà¢Âô6&Cà¢ÂöFcà¢Ð ¢·F"ÓÓÒ&&öÒ"bb¢ÆFb7GÆS×·²F7Æ¢&fÆW"ÂfÆWF&V7Föã¢&6öÇVÖâ"Âv¢#×Óà¢ÆFb7GÆS×·²F7Æ¢&fÆW"Âv¢bÂfÆWw&¢'w&"×Óà¢ÄÔ2Æ&VÃÒ$7W'&VçB$ôÒ"fÇVS×¶BG·ræ7W"çFôfVB"ÖÒ7V#×¶F&vWC¢BG·rçFwBçFôfVB"ÖÒ6öÆ÷#×¶vâò2çv&â¢2æö·Òóà¢ÄÔ2Æ&VÃÒ$6÷7Bv"fÇVS×¶G¶vâò"²"¢"'ÒBG¶vçFôfVB"ÖÒ7V#×¶vâò$÷fW"F&vWB"¢%VæFW"F&vWB'Ò6öÆ÷#×¶vâò2æW'"¢2æö·Òóà¢ÄÔ2Æ&VÃÒ$æçVÂföÇVÖR"fÇVS×¶G²rçföÂòçFôfVBÔ¶Ò7V#Ò'VæG2÷V""óà¢ÄÔ2Æ&VÃÒ$æçVÂ4ôu2"fÇVS×¶BG²ræ7W"¢rçföÂòSbçFôfVBÔÖÒ7V#Ò&B7W'&VçB$ôÒ"6öÆ÷#×´2çW'Òóà¢ÂöFcà¢ÆFb7GÆS×·²F7Æ¢&w&B"Âw&EFV×ÆFT6öÇVÖç3¢#g"g""Âv¢b×Óà¢Ä6&BFFÆSÒ$&ÆÂöbÖFW&Ç2#à¢ÇF&ÆR7GÆS×·²vGF¢#R"Â&÷&FW$6öÆÆ6S¢&6öÆÆ6R"ÂföçE6¦S¢"×Óà¢ÇFVCà¢ÇG"7GÆS×·²&÷&FW$&÷GFöÓ¢6öÆBG´2æ&G'Ö×Óà¢µ²$6ö×öæVçB"Â%G"Â%VæBB"Â$WBB"Â"R$ôÒ%ÒæÖÓâ¢ÇF¶W×¶Ò7GÆS×·²FFæs¢#"ÂFWDÆvã¢ÓÓÒ$6ö×öæVçB"ò&ÆVgB"¢'&vB"Â6öÆ÷#¢2æ×WBÂföçEvVvC¢SÂföçE6¦S¢×Óç¶ÓÂ÷Fà¢Ð¢Â÷G#à¢Â÷FVCà¢ÇF&öGà¢µ²ââçræ&öÕÒç6÷'BÂ"Óâ"ç¢"çRÒç¢çRæÖ"ÂÓâ°¢6öç7BWBÒ"ç¢"çS°¢&WGW&â¢ÇG"¶W×¶Ò7GÆS×·²&÷&FW$&÷GFöÓ¢6öÆBG´2æ&G'Ó×Óà¢ÇFB7GÆS×·²FFæs¢#"Â6öÆ÷#¢2çGB×Óç¶"æ7ÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#"ÂFWDÆvã¢'&vB"Â6öÆ÷#¢2æ×WB×Óç¶"çÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#"ÂFWDÆvã¢'&vB"Â6öÆ÷#¢2æ×WB×ÓâG¶"çRçFôfVB"ÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#"ÂFWDÆvã¢'&vB"ÂföçEvVvC¢S×ÓâG¶WBçFôfVB"ÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#"ÂFWDÆvã¢'&vB"ÂföçE6¦S¢Â6öÆ÷#¢2æFÒ×Óç²WBòF÷D&öÒ¢çFôfVBÒSÂ÷FCà¢Â÷G#à¢°¢ÒÐ¢ÇG"7GÆS×·²&÷&FW%F÷¢'6öÆBG´2æ&G'Ö×Óà¢ÇFB7GÆS×·²FFæs¢#"ÂföçEvVvC¢s×ÓåDõDÃÂ÷FCà¢ÇFB6öÅ7ã×³'Òóà¢ÇFB7GÆS×·²FFæs¢#"ÂFWDÆvã¢'&vB"ÂföçEvVvC¢sÂ6öÆ÷#¢2æÂföçE6¦S¢B×ÓâG·F÷D&öÒçFôfVB"ÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#"ÂFWDÆvã¢'&vB"ÂföçEvVvC¢sÂ6öÆ÷#¢2æ×WB×ÓãSÂ÷FCà¢Â÷G#à¢Â÷F&öGà¢Â÷F&ÆSà¢Âô6&Cà¢ÆFb7GÆS×·²F7Æ¢&fÆW"ÂfÆWF&V7Föã¢&6öÇVÖâ"Âv¢b×Óà¢Ä6&BFFÆSÒ$6÷7B'&V¶F÷vâ#à¢Å&W7öç6fT6öçFæW"vGFÒ#R"VvC×³#Óà¢ÅT6'Cà¢ÅRFF×¶&öÔ6G7ÒFF¶WÒ'fÇVR"æÖT¶WÒ&æÖR"7Ò#SR"7Ò#SR"÷WFW%&FW3×³sWÒææW%&FW3×³CÒFFætævÆS×³7ÒÆ&VÃ×²²æÖRÂW&6VçBÒÓâG¶æÖWÒG²W&6VçB¢çFôfVBÒVÒ7GÆS×·²föçE6¦S¢×Óà¢¶&öÔ6G2æÖòÂÓâÄ6VÆÂ¶W×¶ÒfÆÃ×·T6öÆ÷'5¶RT6öÆ÷'2æÆVæwF×ÒóâÐ¢ÂõSà¢ÅFööÇFf÷&ÖGFW#×·bÓâBG·bçFôfVB"ÖÒ6öçFVçE7GÆS×·²&6¶w&÷VæC¢2æ6&BÂ&÷&FW#¢6öÆBG´2æ&G'ÖÂ&÷&FW%&FW3¢ÂföçE6¦S¢"×Òóà¢ÂõT6'Cà¢Âõ&W7öç6fT6öçFæW#à¢Âô6&Cà¢Ä6&BFFÆSÒ$6÷7B&VGV7FöâG&VæB#à¢Å&W7öç6fT6öçFæW"vGFÒ#R"VvC×³Óà¢ÄÆæT6'BFF×¶6÷7EG&VæGÓà¢Ä6'FW6äw&B7G&ö¶TF6'&Ò#22"7G&ö¶S×´2æ&G'Òóà¢Å2FF¶WÒ'r"F6³×·²föçE6¦S¢ÂfÆÃ¢2æFÒ×Òóà¢Å2F6³×·²föçE6¦S¢ÂfÆÃ¢2æFÒ×ÒFöÖã×µ²&WFò"Â&WFò%×Òóà¢ÅFööÇF6öçFVçE7GÆS×·²&6¶w&÷VæC¢2æ6&BÂ&÷&FW#¢6öÆBG´2æ&G'ÖÂ&÷&FW%&FW3¢ÂföçE6¦S¢"×Òóà¢ÄÆæRGSÒ&Ööæ÷FöæR"FF¶WÒ&7GVÂ"7G&ö¶S×´2æÒ7G&ö¶UvGF×³'ÒF÷C×·²#¢2×ÒæÖSÒ$7GVÂ"óà¢ÄÆæRGSÒ&Ööæ÷FöæR"FF¶WÒ'F&vWB"7G&ö¶S×´2æö·Ò7G&ö¶UvGF×³'Ò7G&ö¶TF6'&Ò#RR"F÷C×¶fÇ6WÒæÖSÒ%F&vWB"óà¢ÄÆVvVæBw&W%7GÆS×·²föçE6¦S¢×Òóà¢ÂôÆæT6'Cà¢Âõ&W7öç6fT6öçFæW#à¢Âô6&Cà¢ÂöFcà¢ÂöFcà¢ÂöFcà¢Ð ¢·F"ÓÓÒ'&6·2"bb¢ÆFb7GÆS×·²F7Æ¢&fÆW"ÂfÆWF&V7Föã¢&6öÇVÖâ"Âv¢#×Óà¢ÆFb7GÆS×·²F7Æ¢&fÆW"Âv¢bÂfÆWw&¢'w&"×Óà¢ÄÔ2Æ&VÃÒ%F÷FÂ&6·2"fÇVS×·&6·2æÆVæwFÒóà¢ÄÔ2Æ&VÃÒ$7&F6Âôv"fÇVS×·&6·2æfÇFW""Óâ"ç6WbÓÓÒ$7&F6Â"ÇÂ"ç6WbÓÓÒ$v"æÆVæwFÒ6öÆ÷#×´2æW''Òóà¢ÄÔ2Æ&VÃÒ$÷Vâ"fÇVS×·&6·2æfÇFW""Óâ"ç7BÓÓÒ$÷Vâ"æÆVæwFÒ6öÆ÷#×´2çv&çÒóà¢ÄÔ2Æ&VÃÒ$ÖöæF÷&ær"fÇVS×·&6·2æfÇFW""Óâ"ç7BÓÓÒ$ÖöæF÷&ær"æÆVæwFÒ6öÆ÷#×´2ææf÷Òóà¢ÂöFcà¢Ä6&BFFÆSÒ%&6²&Vv7FW""&vC×°¢ÆFb7GÆS×·²F7Æ¢&fÆW"Âv¢b×Óà¢µ²$ÆÂ"Âââç&öw&×2æÖÓâæBÒæÖbÓâ¢Æ'WGFöâ¶W×¶gÒöä6Æ6³×²Óâ6WE&bbÒ7GÆS×·°¢FFæs¢#G'"Â&÷&FW%&FW3¢bÂ&÷&FW#¢6öÆBG·&bÓÓÒbò2æ¢2æ&G'ÖÀ¢&6¶w&÷VæC¢&bÓÓÒbò2æ²#""¢'G&ç7&VçB"Â6öÆ÷#¢&bÓÓÒbò2æ¢2æ×WBÀ¢7W'6÷#¢'öçFW""ÂföçE6¦S¢À¢×Óç¶gÓÂö'WGFöãà¢Ð¢ÂöFcà¢Óà¢ÇF&ÆR7GÆS×·²vGF¢#R"Â&÷&FW$6öÆÆ6S¢&6öÆÆ6R"ÂföçE6¦S¢"×Óà¢ÇFVCà¢ÇG"7GÆS×·²&÷&FW$&÷GFöÓ¢6öÆBG´2æ&G'Ö×Óà¢µ²$B"Â%&ör"Â%&6²"Â%6Wbâ"Â$Æ¶VÆâ"Â$×7B"Â$÷væW""Â%7FGW2%ÒæÖÓâ¢ÇF¶W×¶Ò7GÆS×·²FFæs¢#"ÂFWDÆvã¢&ÆVgB"Â6öÆ÷#¢2æ×WBÂföçEvVvC¢SÂföçE6¦S¢×Óç¶ÓÂ÷Fà¢Ð¢Â÷G#à¢Â÷FVCà¢ÇF&öGà¢¶e&6·2æÖ"Óâ¢ÇG"¶W×·"æGÒ7GÆS×·²&÷&FW$&÷GFöÓ¢6öÆBG´2æ&G'Ó×Óà¢ÇFB7GÆS×·²FFæs¢#"ÂföçDfÖÇ¢&Ööæ÷76R"Â6öÆ÷#¢2æFÒÂföçE6¦S¢×Óç·"æGÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#"×ÓãÄ"6öÆ÷#×´2æÓç·"çwÓÂô#ãÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#"Â6öÆ÷#¢2çGBÂÖvGF¢#c×Óà¢ÆFcç·"çGÓÂöFcà¢ÆFb7GÆS×·²föçE6¦S¢Â6öÆ÷#¢2æFÒÂÖ&våF÷¢2×ÓäÖFvFöã¢·"æÖGÓÂöFcà¢Â÷FCà¢ÇFB7GÆS×·²FFæs¢#"×ÓãÅ4"6Wc×·"ç6WgÒóãÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#"Â6öÆ÷#¢2æ×WB×Óç·"æÆ·ÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#"Â6öÆ÷#¢2æ×WB×Óç·"æ×ÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#"Â6öÆ÷#¢2æ×WBÂföçE6¦S¢×Óç·"æ÷vçÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#"×ÓãÄ"6öÆ÷#×·"ç7BÓÓÒ$÷Vâ"ò2çv&â¢2ææf÷Óç·"ç7GÓÂô#ãÂ÷FCà¢Â÷G#à¢Ð¢Â÷F&öGà¢Â÷F&ÆSà¢Âô6&Cà¢ÂöFcà¢Ð ¢·F"ÓÓÒ'gVæ2"bb¢ÆFb7GÆS×·²F7Æ¢&fÆW"ÂfÆWF&V7Föã¢&6öÇVÖâ"Âv¢#×Óà¢Ä6&BFFÆSÒ$7&÷72ÔgVæ7FöæÂ7FGW2ÖG&"&vC×³Ç7â7GÆS×·²föçE6¦S¢Â6öÆ÷#¢2æFÒ×ÓäÖ"Â##cÂ÷7ãçÓà¢ÇF&ÆR7GÆS×·²vGF¢#R"Â&÷&FW$6öÆÆ6S¢&6öÆÆ6R"ÂföçE6¦S¢"×Óà¢ÇFVCà¢ÇG"7GÆS×·²&÷&FW$&÷GFöÓ¢6öÆBG´2æ&G'Ö×Óà¢ÇF7GÆS×·²FFæs¢#'"ÂFWDÆvã¢&ÆVgB"Â6öÆ÷#¢2æ×WBÂföçEvVvC¢SÂföçE6¦S¢×ÓåFVÓÂ÷Fà¢·&öw&×2æÖÓâ¢ÇF¶W×·æGÒ7GÆS×·²FFæs¢#'"ÂFWDÆvã¢&6VçFW""Â6öÆ÷#¢2æ×WBÂföçEvVvC¢SÂföçE6¦S¢×Óà¢·æGÓÆ'"óãÇ7â7GÆS×·²föçE6¦S¢Â6öÆ÷#¢2æFÒ×Óç·ç6WÓÂ÷7ãà¢Â÷Fà¢Ð¢Â÷G#à¢Â÷FVCà¢ÇF&öGà¢·gVæ2æÖ&÷rÂÓâ¢ÇG"¶W×¶Ò7GÆS×·²&÷&FW$&÷GFöÓ¢6öÆBG´2æ&G'Ó×Óà¢ÇFB7GÆS×·²FFæs¢#'"ÂföçEvVvC¢S×Óç·&÷rçFV×ÓÂ÷FCà¢·&öw&×2æÖÓâ¢ÇFB¶W×·æGÒ7GÆS×·²FFæs¢#'"ÂFWDÆvã¢&6VçFW""×Óà¢Å4B3×·&÷u·æE×Òóà¢Â÷FCà¢Ð¢Â÷G#à¢Ð¢Â÷F&öGà¢Â÷F&ÆSà¢Âô6&Cà¢Ä6&BFFÆSÒ%FVÒv÷&¶ÆöB#à¢Å&W7öç6fT6öçFæW"vGFÒ#R"VvC×³3Óà¢Ä&$6'BFF×·gVæ2æÖ"Óâ°¢FVÓ¢"çFVÒç&WÆ6R"Værâ"Â""ç&WÆ6R"ò"Â"ò"À¢$öâG&6²#¢&öw&×2æfÇFW"Óâ%·æEÒÓÓÒ$öâG&6²"æÆVæwFÀ¢$B&6²#¢&öw&×2æfÇFW"Óâ%·æEÒÓÓÒ$B&6²"æÆVæwFÀ¢$æ÷B7F'FVB#¢&öw&×2æfÇFW"Óâ%·æEÒÓÓÒ$æ÷B7F'FVB"æÆVæwFÀ¢ÒÓà¢Ä6'FW6äw&B7G&ö¶TF6'&Ò#22"7G&ö¶S×´2æ&G'Òóà¢Å2FF¶WÒ'FVÒ"F6³×·²föçE6¦S¢ÂfÆÃ¢2æFÒ×ÒçFW'fÃ×³ÒævÆS×²Ó#ÒFWDæ6÷#Ò&VæB"VvC×³cÒóà¢Å2F6³×·²föçE6¦S¢ÂfÆÃ¢2æFÒ×Òóà¢ÅFööÇF6öçFVçE7GÆS×·²&6¶w&÷VæC¢2æ6&BÂ&÷&FW#¢6öÆBG´2æ&G'ÖÂ&÷&FW%&FW3¢ÂföçE6¦S¢"×Òóà¢Ä&"FF¶WÒ$öâG&6²"fÆÃ×´2æö·Ò7F6´CÒ&"óà¢Ä&"FF¶WÒ$B&6²"fÆÃ×´2çv&çÒ7F6´CÒ&"óà¢Ä&"FF¶WÒ$æ÷B7F'FVB"fÆÃ×´2æF×Ò7F6´CÒ&"&FW3×µ³BÂBÂÂ×Òóà¢ÄÆVvVæBw&W%7GÆS×·²föçE6¦S¢×Òóà¢Âô&$6'Cà¢Âõ&W7öç6fT6öçFæW#à¢Âô6&Cà¢ÂöFcà¢Ð ¢·F"ÓÓÒ'7WÆW'2"bb¢ÆFb7GÆS×·²F7Æ¢&fÆW"ÂfÆWF&V7Föã¢&6öÇVÖâ"Âv¢#×Óà¢Ä6&BFFÆSÒ%7WÆW"ò'FæW"66÷&V6&B#à¢ÇF&ÆR7GÆS×·²vGF¢#R"Â&÷&FW$6öÆÆ6S¢&6öÆÆ6R"ÂföçE6¦S¢"×Óà¢ÇFVCà¢ÇG"7GÆS×·²&÷&FW$&÷GFöÓ¢6öÆBG´2æ&G'Ö×Óà¢µ²%7WÆW""Â%GR"Â%&öw&×2"Â%VÆG"Â$õDB"Â$ÆVB"Â$Æö6Föâ"Â%&6²%ÒæÖÓâ¢ÇF¶W×¶Ò7GÆS×·²FFæs¢#'"ÂFWDÆvã¢&ÆVgB"Â6öÆ÷#¢2æ×WBÂföçEvVvC¢SÂföçE6¦S¢×Óç¶ÓÂ÷Fà¢Ð¢Â÷G#à¢Â÷FVCà¢ÇF&öGà¢·7WÆW'2æÖ2ÂÓâ¢ÇG"¶W×¶Ò7GÆS×·²&÷&FW$&÷GFöÓ¢6öÆBG´2æ&G'Ó×Óà¢ÇFB7GÆS×·²FFæs¢#'"ÂföçEvVvC¢c×Óç·2ææÖWÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#'"×ÓãÄ"6öÆ÷#×·2çGRÓÓÒ$4Ò"ò2æ¢2çGRÓÓÒ$ôDÒ"ò2çW"¢2ææf÷Óç·2çGWÓÂô#ãÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#'"Â6öÆ÷#¢2æ×WBÂföçE6¦S¢×Óç·2ç&öG7ÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#'"×Óà¢ÆFb7GÆS×·²F7Æ¢&fÆW"ÂÆväFV×3¢&6VçFW""Âv¢×Óà¢Å"fÃ×·2çVÇÒ6öÆ÷#×·2çVÂãÒRò2æö²¢2çv&çÒ×³GÒóà¢Ç7â7GÆS×·²föçE6¦S¢Â6öÆ÷#¢2çVÂãÒRò2æö²¢2çv&âÂföçEvVvC¢cÂÖåvGF¢3×Óç·2çVÇÒSÂ÷7ãà¢ÂöFcà¢Â÷FCà¢ÇFB7GÆS×·²FFæs¢#'"×Óà¢ÆFb7GÆS×·²F7Æ¢&fÆW"ÂÆväFV×3¢&6VçFW""Âv¢×Óà¢Å"fÃ×·2æ÷FGÒ6öÆ÷#×·2æ÷FBãÒ2ò2æö²¢2çv&çÒ×³GÒóà¢Ç7â7GÆS×·²föçE6¦S¢Â6öÆ÷#¢2æ÷FBãÒ2ò2æö²¢2çv&âÂföçEvVvC¢cÂÖåvGF¢3×Óç·2æ÷FGÒSÂ÷7ãà¢ÂöFcà¢Â÷FCà¢ÇFB7GÆS×·²FFæs¢#'"Â6öÆ÷#¢2æ×WBÂFWDÆvã¢&6VçFW""×Óç·2æÆVG×sÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#'"Â6öÆ÷#¢2æFÒÂföçE6¦S¢×Óç·2æÆö7ÓÂ÷FCà¢ÇFB7GÆS×·²FFæs¢#'"×ÓãÅ4"6Wc×·2ç&6·ÒóãÂ÷FCà¢Â÷G#à¢Ð¢Â÷F&öGà¢Â÷F&ÆSà¢Âô6&Cà¢Ä6&BFFÆSÒ%VÆGg2öâÕFÖRFVÆfW'#à¢Å&W7öç6fT6öçFæW"vGFÒ#R"VvC×³#cÓà¢Ä&$6'BFF×·7WÆW'7ÒÆ÷WCÒ'fW'F6Â#à¢Ä6'FW6äw&B7G&ö¶TF6'&Ò#22"7G&ö¶S×´2æ&G'Òóà¢Å2GSÒ&çVÖ&W""FöÖã×µ³sRÂ×ÒF6³×·²föçE6¦S¢ÂfÆÃ¢2æFÒ×Òóà¢Å2GSÒ&6FVv÷'"FF¶WÒ&æÖR"F6³×·²föçE6¦S¢ÂfÆÃ¢2æ×WB×ÒvGF×³Òóà¢ÅFööÇF6öçFVçE7GÆS×·²&6¶w&÷VæC¢2æ6&BÂ&÷&FW#¢6öÆBG´2æ&G'ÖÂ&÷&FW%&FW3¢ÂföçE6¦S¢"×Òóà¢Ä&"FF¶WÒ'VÂ"fÆÃ×´2æÒæÖSÒ%VÆGR"&FW3×µ³ÂBÂBÂ×Ò&%6¦S×³Òóà¢Ä&"FF¶WÒ&÷FB"fÆÃ×´2æö·ÒæÖSÒ$õDBR"&FW3×µ³ÂBÂBÂ×Ò&%6¦S×³Òóà¢ÄÆVvVæBw&W%7GÆS×·²föçE6¦S¢×Òóà¢Âô&$6'Cà¢Âõ&W7öç6fT6öçFæW#à¢Âô6&Cà¢ÂöFcà¢Ð¢ÂöFcà ¢ÆFb7GÆS×·²&÷&FW%F÷¢6öÆBG´2æ&G'ÖÂFFæs¢#g#G"ÂFWDÆvã¢&6VçFW""ÂföçE6¦S¢Â6öÆ÷#¢2æFÒÂÖ&våF÷¢C×Óà¢6×6&77FV×2UÒÆFf÷&Ò(	B6öæ6WB'×V·VæBf¦Â&Gv&R&öw&ÒÖævVÖVçBf÷"õB&öGV7B÷'FföÆ÷0¢ÂöFcà¢ÂöFcà¢°¢Ð ¢&V7DDôÒæ7&VFU&ö÷BFö7VÖVçBævWDVÆVÖVçD'B'&ö÷B"ç&VæFW"ÄF6&ö&Bóâ°¢Â÷67&Cà£Âö&öGà£ÂöFÖÃà
+                <Card title={`${pg.id} â ${pg.name} Schedule`} right={<B color={pC[pg.phase]}>{pg.phase}</B>}>
+                  <Gantt sched={pg.sched} />
+                </Card>
+                <Card title="Component Breakdown by Subsystem">
+                  <div style={{ overflowX: "auto" }}>
+                    <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                      <thead>
+                        <tr style={{ borderBottom: `1px solid ${C.bdr}` }}>
+                          {["Component", "Subsystem", "Supplier", "Status", "Risk", "Lead"].map(h => (
+                            <th key={h} style={{ padding: "10px 12px", textAlign: "left", color: C.mut, fontWeight: 500, fontSize: 11, textTransform: "uppercase" }}>{h}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {pg.comps.map((c, i) => (
+                          <tr key={i} style={{ borderBottom: `1px solid ${C.bdr}88` }}>
+                            <td style={{ padding: "10px 12px", fontWeight: 500, color: C.txt }}>{c.n}</td>
+                            <td style={{ padding: "10px 12px" }}><B color={subColor[c.sub] || C.dim}>{c.sub}</B></td>
+                            <td style={{ padding: "10px 12px", color: C.mut }}>{c.sup}</td>
+                            <td style={{ padding: "10px 12px" }}><B color={stColor[c.st] || C.dim}>{c.st}</B></td>
+                            <td style={{ padding: "10px 12px" }}><SB sev={c.risk} /></td>
+                            <td style={{ padding: "10px 12px", color: C.mut, textAlign: "center" }}>{c.wk}w</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </Card>
+              </div>
+            )}
+
+            {tab === "bom" && (
+              <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+                <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
+                  <MC label="Current BOM" value={`$${pg.cur.toFixed(2)}`} sub={`Target: $${pg.tgt.toFixed(2)}`} color={gap > 0 ? C.warn : C.ok} />
+                  <MC label="Cost Gap" value={`${gap > 0 ? "+" : ""}$${gap.toFixed(2)}`} sub={gap > 0 ? "Over target" : "Under target"} color={gap > 0 ? C.err : C.ok} />
+                  <MC label="Annual Volume" value={`${(pg.vol / 1000).toFixed(0)}K`} sub="units/year" />
+                  <MC label="Annual COGS" value={`$${((pg.cur * pg.vol) / 1e6).toFixed(1)}M`} sub="at current BOM" color={C.pur} />
+                </div>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                  <Card title="Bill of Materials">
+                    <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                      <thead>
+                        <tr style={{ borderBottom: `1px solid ${C.bdr}` }}>
+                          {["Component", "Qty", "Unit $", "Ext $", "% BOM"].map(h => (
+                            <th key={h} style={{ padding: "8px 8px", textAlign: h === "Component" ? "left" : "right", color: C.mut, fontWeight: 500, fontSize: 11 }}>{h}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {[...pg.bom].sort((a, b) => b.q * b.u - a.q * a.u).map((b, i) => {
+                          const ext = b.q * b.u;
+                          return (
+                            <tr key={i} style={{ borderBottom: `1px solid ${C.bdr}88` }}>
+                              <td style={{ padding: "8px 8px", color: C.txt }}>{b.c}</td>
+                              <td style={{ padding: "8px 8px", textAlign: "right", color: C.mut }}>{b.q}</td>
+                              <td style={{ padding: "8px 8px", textAlign: "right", color: C.mut }}>${b.u.toFixed(2)}</td>
+                              <td style={{ padding: "8px 8px", textAlign: "right", fontWeight: 500 }}>${ext.toFixed(2)}</td>
+                              <td style={{ padding: "8px 8px", textAlign: "right", fontSize: 10, color: C.dim }}>{((ext / totBom) * 100).toFixed(1)}%</td>
+                            </tr>
+                          );
+                        })}
+                        <tr style={{ borderTop: `2px solid ${C.bdr}` }}>
+                          <td style={{ padding: "10px 8px", fontWeight: 700 }}>TOTAL</td>
+                          <td colSpan={2} />
+                          <td style={{ padding: "10px 8px", textAlign: "right", fontWeight: 700, color: C.a, fontSize: 14 }}>${totBom.toFixed(2)}</td>
+                          <td style={{ padding: "10px 8px", textAlign: "right", fontWeight: 700, color: C.mut }}>100%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </Card>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+                    <Card title="Cost Breakdown">
+                      <ResponsiveContainer width="100%" height={200}>
+                        <PieChart>
+                          <Pie data={bomCats} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={75} innerRadius={40} paddingAngle={3} label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`} style={{ fontSize: 10 }}>
+                            {bomCats.map((_, i) => <Cell key={i} fill={pieColors[i % pieColors.length]} />)}
+                          </Pie>
+                          <Tooltip formatter={v => `$${v.toFixed(2)}`} contentStyle={{ background: C.card, border: `1px solid ${C.bdr}`, borderRadius: 8, fontSize: 12 }} />
+                        </PieChart>
+                      </ResponsiveContainer>
+                    </Card>
+                    <Card title="Cost Reduction Trend">
+                      <ResponsiveContainer width="100%" height={180}>
+                        <LineChart data={costTrend}>
+                          <CartesianGrid strokeDasharray="3 3" stroke={C.bdr} />
+                          <XAxis dataKey="w" tick={{ fontSize: 10, fill: C.dim }} />
+                          <YAxis tick={{ fontSize: 10, fill: C.dim }} domain={["auto", "auto"]} />
+                          <Tooltip contentStyle={{ background: C.card, border: `1px solid ${C.bdr}`, borderRadius: 8, fontSize: 12 }} />
+                          <Line type="monotone" dataKey="actual" stroke={C.a} strokeWidth={2} dot={{ r: 3 }} name="Actual" />
+                          <Line type="monotone" dataKey="target" stroke={C.ok} strokeWidth={2} strokeDasharray="5 5" dot={false} name="Target" />
+                          <Legend wrapperStyle={{ fontSize: 11 }} />
+                        </LineChart>
+                      </ResponsiveContainer>
+                    </Card>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {tab === "risks" && (
+              <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+                <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
+                  <MC label="Total Risks" value={risks.length} />
+                  <MC label="Critical/High" value={risks.filter(r => r.sev === "Critical" || r.sev === "High").length} color={C.err} />
+                  <MC label="Open" value={risks.filter(r => r.st === "Open").length} color={C.warn} />
+                  <MC label="Monitoring" value={risks.filter(r => r.st === "Monitoring").length} color={C.info} />
+                </div>
+                <Card title="Risk Register" right={
+                  <div style={{ display: "flex", gap: 6 }}>
+                    {["All", ...programs.map(p => p.id)].map(f => (
+                      <button key={f} onClick={() => setRf(f)} style={{
+                        padding: "4px 12px", borderRadius: 6, border: `1px solid ${rf === f ? C.a : C.bdr}`,
+                        background: rf === f ? C.a + "12" : "transparent", color: rf === f ? C.a : C.mut,
+                        cursor: "pointer", fontSize: 11,
+                      }}>{f}</button>
+                    ))}
+                  </div>
+                }>
+                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                    <thead>
+                      <tr style={{ borderBottom: `1px solid ${C.bdr}` }}>
+                        {["ID", "Prog", "Risk", "Sev.", "Likeli.", "Impact", "Owner", "Status"].map(h => (
+                          <th key={h} style={{ padding: "8px 8px", textAlign: "left", color: C.mut, fontWeight: 500, fontSize: 11 }}>{h}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {fRisks.map(r => (
+                        <tr key={r.id} style={{ borderBottom: `1px solid ${C.bdr}88` }}>
+                          <td style={{ padding: "8px 8px", fontFamily: "monospace", color: C.dim, fontSize: 11 }}>{r.id}</td>
+                          <td style={{ padding: "8px 8px" }}><B color={C.a}>{r.pg}</B></td>
+                          <td style={{ padding: "8px 8px", color: C.txt, maxWidth: 260 }}>
+                            <div>{r.t}</div>
+                            <div style={{ fontSize: 10, color: C.dim, marginTop: 3 }}>Mitigation: {r.mit}</div>
+                          </td>
+                          <td style={{ padding: "8px 8px" }}><SB sev={r.sev} /></td>
+                          <td style={{ padding: "8px 8px", color: C.mut }}>{r.lik}</td>
+                          <td style={{ padding: "8px 8px", color: C.mut }}>{r.imp}</td>
+                          <td style={{ padding: "8px 8px", color: C.mut, fontSize: 11 }}>{r.own}</td>
+                          <td style={{ padding: "8px 8px" }}><B color={r.st === "Open" ? C.warn : C.info}>{r.st}</B></td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </Card>
+              </div>
+            )}
+
+            {tab === "xfunc" && (
+              <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+                <Card title="Cross-Functional Status Matrix" right={<span style={{ fontSize: 11, color: C.dim }}>Mar 11, 2026</span>}>
+                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                    <thead>
+                      <tr style={{ borderBottom: `1px solid ${C.bdr}` }}>
+                        <th style={{ padding: "10px 12px", textAlign: "left", color: C.mut, fontWeight: 500, fontSize: 11 }}>Team</th>
+                        {programs.map(p => (
+                          <th key={p.id} style={{ padding: "10px 12px", textAlign: "center", color: C.mut, fontWeight: 500, fontSize: 11 }}>
+                            {p.id}<br /><span style={{ fontSize: 10, color: C.dim }}>{p.phase}</span>
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {xFunc.map((row, i) => (
+                        <tr key={i} style={{ borderBottom: `1px solid ${C.bdr}88` }}>
+                          <td style={{ padding: "10px 12px", fontWeight: 500 }}>{row.team}</td>
+                          {programs.map(p => (
+                            <td key={p.id} style={{ padding: "10px 12px", textAlign: "center" }}>
+                              <SD s={row[p.id]} />
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </Card>
+                <Card title="Team Workload">
+                  <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={xFunc.map(r => ({
+                      team: r.team.replace(" Eng.", "").replace(" / ", "/"),
+                      "On Track": programs.filter(p => r[p.id] === "On Track").length,
+                      "At Risk": programs.filter(p => r[p.id] === "At Risk").length,
+                      "Not Started": programs.filter(p => r[p.id] === "Not Started").length,
+                    }))}>
+                      <CartesianGrid strokeDasharray="3 3" stroke={C.bdr} />
+                      <XAxis dataKey="team" tick={{ fontSize: 9, fill: C.dim }} interval={0} angle={-20} textAnchor="end" height={60} />
+                      <YAxis tick={{ fontSize: 10, fill: C.dim }} />
+                      <Tooltip contentStyle={{ background: C.card, border: `1px solid ${C.bdr}`, borderRadius: 8, fontSize: 12 }} />
+                      <Bar dataKey="On Track" fill={C.ok} stackId="a" />
+                      <Bar dataKey="At Risk" fill={C.warn} stackId="a" />
+                      <Bar dataKey="Not Started" fill={C.dim} stackId="a" radius={[4, 4, 0, 0]} />
+                      <Legend wrapperStyle={{ fontSize: 11 }} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </Card>
+              </div>
+            )}
+
+            {tab === "suppliers" && (
+              <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+                <Card title="Supplier / Partner Scorecard">
+                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                    <thead>
+                      <tr style={{ borderBottom: `1px solid ${C.bdr}` }}>
+                        {["Supplier", "Type", "Programs", "Quality", "OTD", "Lead", "Location", "Risk"].map(h => (
+                          <th key={h} style={{ padding: "10px 12px", textAlign: "left", color: C.mut, fontWeight: 500, fontSize: 11 }}>{h}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {suppliers.map((s, i) => (
+                        <tr key={i} style={{ borderBottom: `1px solid ${C.bdr}88` }}>
+                          <td style={{ padding: "10px 12px", fontWeight: 600 }}>{s.name}</td>
+                          <td style={{ padding: "10px 12px" }}><B color={s.type === "CM" ? C.a : s.type === "ODM" ? C.pur : C.info}>{s.type}</B></td>
+                          <td style={{ padding: "10px 12px", color: C.mut, fontSize: 11 }}>{s.prods}</td>
+                          <td style={{ padding: "10px 12px" }}>
+                            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                              <PB val={s.qual} color={s.qual >= 95 ? C.ok : C.warn} h={4} />
+                              <span style={{ fontSize: 11, color: s.qual >= 95 ? C.ok : C.warn, fontWeight: 600, minWidth: 30 }}>{s.qual}%</span>
+                            </div>
+                          </td>
+                          <td style={{ padding: "10px 12px" }}>
+                            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                              <PB val={s.otd} color={s.otd >= 93 ? C.ok : C.warn} h={4} />
+                              <span style={{ fontSize: 11, color: s.otd >= 93 ? C.ok : C.warn, fontWeight: 600, minWidth: 30 }}>{s.otd}%</span>
+                            </div>
+                          </td>
+                          <td style={{ padding: "10px 12px", color: C.mut, textAlign: "center" }}>{s.lead}w</td>
+                          <td style={{ padding: "10px 12px", color: C.dim, fontSize: 11 }}>{s.loc}</td>
+                          <td style={{ padding: "10px 12px" }}><SB sev={s.risk} /></td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </Card>
+                <Card title="Quality vs On-Time Delivery">
+                  <ResponsiveContainer width="100%" height={260}>
+                    <BarChart data={suppliers} layout="vertical">
+                      <CartesianGrid strokeDasharray="3 3" stroke={C.bdr} />
+                      <XAxis type="number" domain={[75, 100]} tick={{ fontSize: 10, fill: C.dim }} />
+                      <YAxis type="category" dataKey="name" tick={{ fontSize: 11, fill: C.mut }} width={90} />
+                      <Tooltip contentStyle={{ background: C.card, border: `1px solid ${C.bdr}`, borderRadius: 8, fontSize: 12 }} />
+                      <Bar dataKey="qual" fill={C.a} name="Quality %" radius={[0, 4, 4, 0]} barSize={10} />
+                      <Bar dataKey="otd" fill={C.ok} name="OTD %" radius={[0, 4, 4, 0]} barSize={10} />
+                      <Legend wrapperStyle={{ fontSize: 11 }} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </Card>
+              </div>
+            )}
+          </div>
+
+          <div style={{ borderTop: `1px solid ${C.bdr}`, padding: "16px 24px", textAlign: "center", fontSize: 11, color: C.dim, marginTop: 40 }}>
+            Samsara Systems EPM Platform â Concept by Mukund Vijay | Hardware program management for IoT product portfolios
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<Dashboard />);
+  </script>
+</body>
+</html>
